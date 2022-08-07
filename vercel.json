@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    {"source": "/(.*)", "destination": "https://raw.githubusercontent.com/jwenjian/imgs/master/$1"}
+  ]
+}

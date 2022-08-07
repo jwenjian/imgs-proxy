@@ -1,5 +1,10 @@
 {
   "rewrites": [
     {"source": "/(.*)", "destination": "https://raw.githubusercontent.com/jwenjian/imgs/master/$1"}
+  ],
+  "headers": [
+    {"source": "/(.*)", "headers": [
+      {"key": "Cache-Control", "value": "public, max-age=604800, immutable"}
+    ]}
   ]
 }
